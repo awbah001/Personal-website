@@ -1,3 +1,3 @@
 # my_website
 
-This will be class website.
+This my personal website that i will be building.
