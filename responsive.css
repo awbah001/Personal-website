@@ -1,202 +1,125 @@
-*{
-    padding:0;
-    margin:0;
-    box-sizing:border-box;
-    -webkit-font-smoothing: antialiased;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body, html{
+  height:100%;
+  margin:0;
 }
-header{
-    background-color:var(--bgDark);
-    clip-path:polygon(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  
 }
-header nav .left a{
-    color: var(--white);
-    text-decoration: none;
-    margin-right: 2rem;
-    text-transform: uppercase;
-    transition: all .2s ease;
+a {
+  text-decoration: none;
 }
-header nav .left a:hover{
-    color:var(--primary);
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
 }
-header nav{
-    margin-right: 3rem;
+.logo {
+  max-height: 40px;
+  border-radius:50px;
 }
-body{
-    font-family: 'Poppins', sans-serif;
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
 }
-.container{
-    max-width: 1152px;
-    padding: 0 15px;
-    margin: 0 auto;
+nav ul li a {
+  color: #1d1d24;
+  position: relative;
+  padding: 5px 0;
 }
-.hero{
-    padding-top: 2rem;
-    padding-bottom: 3rem;
+nav ul li a:hover {
+  color: #fd4766;
 }
-.hero .right{
-    color: var(--white);
-    margin-top: -7rem;
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #fd4766;
+  transition: 0.3s;
+  bottom: 0;
 }
-.hero .right h6{
-    font-size: 1.6rem;
-    color: var(--primary);
-    margin-bottom: 2rem;
+nav ul li a:hover:after {
+  width: 100%;
 }
-.hero .right h1{
-    font-size: 4rem;
-    font-weight: 100;
-    line-height: 1.2;
-    margin-bottom: 2rem;
+.bImg{
+  background-image: url('ocean_by_ansarimohammed_dghtxp6.jpg');
+  background-size: cover;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  height:100%;
 }
-.hero .right h1 span{
-    color: var(--primary);
+.profile{
+  width:250px;
+  height: 350px;
+  position:absolute;
+  right:0px;
+  border-radius: 250px;
+  box-shadow:0 4px 8px 0 rgba(247, 247, 247, 0.929), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
 }
-.hero .right p{
-    line-height:1.9;
-    margin-bottom: 2rem;
+.btn {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 40px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  background-size: 152% 100%;
+  background: #fd4766;
+  border: 2px solid #fd4766;
 }
-.flex{
-    display: flex;
+.btn:hover {
+  background: transparent;
+  border-color: #fd4766;
+  color: #fd4766;
 }
-.items-centre{
-    align-items: center;
+.content {
+  position: absolute;
+  top: 35%;
+  left: 8%;
 }
-.justify-between{
-    justify-content:space-between;
+.content .title {
+  color: #0a0a0a;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: inline-block;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    120deg,
+    #1c99fe 20.69%,
+    #7644ff 50.19%,
+    #fd4766 79.69%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.justify-center{
-    justify-content: center;
+.content h1 {
+  color: #1f1f25;
+  font-size: 75px;
+  font-weight: 900;
+  line-height: 90px;
+  text-transform: inherit;
+  width: 70%;
 }
-.justify-right{
-    justify-content: right;
+.content h1 span {
+  color: #fd4766;
 }
-.btn{
-    padding: 0.6rem 2rem;
-    font-size: 1rem;
-    font-weight: 600;
-    border: 2px solid transparent;
-    outline: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: all .2s ease;
+.content p {
+  width: 55%;
+  color: #ec1d81;
+  margin-top: 25px;
+  margin-bottom: 30px;
 }
-.btn-primary{
-    background-color: var(--primary);
-    color: var(--secondary);
-    margin-top: -15rem;
-}
-.btn-primary:hover{
-    background: transparent;
-    border-color: var(--primary);
-    color: var(--primary);
-}
-.flex-1{
-    flex: 1;
-}
-.btn-secondary{
-    background: transparent;
-    color: var(--primary);
-    border-color: var(--primary);
-}
-.btn-secondary:hover{
-    background: var(--primary);
-    color: var(--secondary);
-}
-section{
-    padding: 6rem;
-}
-section.about h1{
-    margin-bottom: 1.6rem;
-    font-size: 1.6rem;
-    font-weight: 600;
-}
-section.about h1 span{
-    color: var(--primary);
-}
-section.about h3{
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    }
-    section.about p{
-    font-family: 'Lato', sans-serif;
-    color: var(--secondary);
-    line-height: 1.9rem;
-    margin-bottom: 2rem;
-    }
-    section.about .socials{
-    display: flex;
-    }
-    section.about .socials a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35px;
-    margin-right: 0.8rem;
-    border-radius: 50%;
-    }
-    section.about .socials a:hover{
-    background: var(--primary);
-    }
-    section.services{
-        background: rgb(17, 17, 17);
-    }
-    .services-head{
-        color: rgb(10, 9, 9);
-        text-align: center;
-        margin-bottom: 1rem;
-        line-height: 0.5rem;
-        color: var(--primary);
-    }
-    .services-head + p{
-        color: var(--white);
-        font-family: 'Lato', sans-serif;
-        margin-bottom: 1rem;
-        text-align: center;
-        margin-bottom: 6rem;
-        font-weight: 400;
-    }
-    .card img{
-        width: 50px;
-        background: white;
-    }
-    section.services .card-grid{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 2rem;
-    }
-    section.services .card-grid .card{
-        background: var(--white);
-        padding: 3rem 2rem;
-        position: relative;
-        text-align: center;
-        transition: all .2s ease;
-    }
-    section.services .card-grid .card img{
-        position: absolute;
-        top: -1.5rem;
-        left: 50%;
-        transform: translateX(-50%);
-        color: var(--primary);
-    }
-    section.services .card-grid .card h2{
-        font-weight: 600;
-        font-size:1.2rem;
-        margin-bottom: 0.5rem;
-    }
-    section.services .card-grid .card p{
-        font-family: 'Lato', sans-serif;
-        color: var(--secondary);
-        line-height: 1.6;
-    }
-    section.services .card-grid .card:hover{
-        background: var(--primary);
-        }
-    section.services .card-grid .card:hover h2{
-        color: var(--white);
-        }
-    section.services .card-grid .card:hover p{
-        color: var(--white);
-        }
 
     

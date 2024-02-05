@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <title>Blog</title>
+</head>
+<body>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    
+    body {
+      font-family: Arial;
+      padding: 20px;
+      background-color: linear-gradient(to bottom right, rgb(6, 5, 5), #d4d5dd);
+      color:#010104;
+    }
+    
+    .header {
+      padding: 30px;
+      font-size: 40px;
+      text-align: center;
+    }
+      .bImg{
+        background-image: url('mushrooms.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100%;
+      }
+     
+    .leftcolumn {   
+      float: left;
+      width: 75%;
+    }
+    
+    .rightcolumn {
+      float: left;
+      width: 25%;
+      padding-left: 20px;
+    }
+    .fakeimg {
+      background-color: #090909;
+      width: 100%;
+      padding: 5px;
+      overflow:auto;
+      object-fit:cover;
+    }
+    .card {
+       background-color: white;
+       padding: 20px;
+       margin-top: 20px;
+       box-shadow: 0 3px 8px rgba(0,0,0, .25);
+       border-radius:20px;
+    }
+    
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+      margin-top: 20px;
+      border-radius: 20px;
+    }
+    
+
+    @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+      }
+    }
+    </style>
+    </head>
+    <body class="bImg">
+    
+    <div class="header">
+      <h2>WORLD OF AWESOME</h2>
+    </div>
+    
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>Nature Adventures</h2>
+          <h5>Beauty Lays In Nature, Dec 6, 2024</h5>
+          <div><img src="Tree.png" class="fakeimg" style="height:600px;"></div>
+          <p>What there not to love about nature.</p>
+          <p>Even though it is an AI generated image, it tells us how beautiful nature the cherry blossom scents it's refreshing.</p>
+        </div>
+        <div class="card">
+          <h2>My favorite game (The Last of Us)</h2>
+          <h5>Gaming, Sep 2, 2017</h5>
+          <div><img src="last_of_us.jpg" class="fakeimg" style="height:550px;" ></div>
+          <p>I don't want to spoil the so check it out.</p>
+          <p>The protagonist in the first game, Joel who lost his daughter to the zombie apocolypse must smuggle an infected girl ellie. The story has a lot of sad part but it gets better. </p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>About Me</h2>
+          <div><img src="satoru_gojo.png" class="fakeimg" style="height:400px;width:250;"></div>
+          <p>A student who is definitely going to become a tech tycoon in the future like Elon Musk.</p>
+        </div>
+        <div class="card">
+          <h3>Popular Post</h3>
+          <div ><img src="Ellie.jpg" class="fakeimg"></div><br>
+          <div ><img src="the_last_of_us1.png"class="fakeimg"></div><br>
+          <div ><img src="starfield.png" class="fakeimg"></div>
+        </div>
+        <div class="card">
+          <h3>Follow Me on</h3>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href="tel:+23275071352"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href=""> <i class="fa-brands fa-instagram"></i></a>
+          <a href=""> <i class="fa-brands fa-snapchat"></i></a>
+          <a href=""> <i class="fa-brands fa-pinterest"></i></a>
+          <a href=""> <i class="fa-brands fa-github"></i></a>
+            </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
+    
+  
+</body>
+</html>
