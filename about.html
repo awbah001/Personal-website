@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>About Me</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+        *{
+            font-family:'Poppins' sans-serif;
+        }
+        .bImg{
+            background-image: url('ocean_by_ansarimohammed_dghtxp6.jpg');
+            background-size: cover;
+            background-attachment:fixed;
+            background-repeat: no-repeat;
+            height:100%;
+          }
+        .profiles{
+            width:180px;
+            height: 250px;
+            position:relative;
+            right:0px;
+            border-radius: 450px;
+            box-shadow:0 3px 9px 0 rgba(35, 44, 65, 0.929), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .logo{
+            max-height: 40px;
+            border-radius:50px;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 100px;
+          }
+          nav ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 10px 20px;
+          }
+          nav ul li a {
+            color: #1d1d24;
+            position: relative;
+            padding: 5px 0;
+          }
+          nav ul li a:hover {
+            color: #fd4766;
+          }
+          nav ul li a:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: #fd4766;
+            transition: 0.3s;
+            bottom: 0;
+          }
+          nav ul li a:hover:after {
+            width: 100%;
+          }
+          .content{
+                width:25rem;
+                padding:0.625rem;
+                border-radius: 6px;
+                box-shadow: 0px 2px 15px 2px #1f2028;
+                background-color:#f0f8ff;
+          }
+          .content-text {
+            width: 100%;
+            color: #080808;
+            margin-top: 25px;
+            margin-bottom: 30px;
+          }
+          .hero{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+          }
+          .socials{
+            display:flex;
+            flex-direction:column;
+            position:fixed;
+            right:1%;
+            bottom:50%;
+          }
+          .socicon{
+            width:2rem;
+            height: 2rem;
+          }
+          footer{
+            background-color:transparent;
+            padding: 1.25rem;
+            text-align: center;
+            margin: 2rem 0 0;
+          }
+    </style>
+</head>
+<body class="bImg">
+    <nav>
+            <img src="Logo-Designs.jpeg" class="logo" />
+            <ul>
+              <li><a href="index.html"><i class="fa fa-home"></i>  Home</a></li>
+              <li><a href="portfolio.html"><i class="fa fa-fw fa-folder"></i>  Portfolio</a></li>
+              <li><a href="blog.html"><i class="fa-solid fa-blog"></i>  Blog</li>
+              <li><a href="contact.html"><i class="fa fa-fw fa-phone"></i>  Contact</a></li>
+            </ul>
+    </nav>
+    <section>
+ <img src="myprofile.jpeg" alt="Profile picture for now" class="profiles">
+       <div class="hero">
+          <div class="content">
+            <p class="content-text">Hello, My name is Alhaji Mohamed Wurrie Bah
+              An aspiring software developer working will become a tech enterpreneur.
+              I'm a university for now, attending Central University.
+              I'm an anime and basketball fan, that why website is cartoonish.</p>
+      </div>
+        </div>
+        
+    </section>
+    <div class="socials">
+      <a href="#" target="_blank"
+        ><img
+          src="twitter_icon.png"
+          alt="Twitter"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img
+          src="instagram_icon.png"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img
+          src="linkedin_icon.png"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+      ><img src="github-icon.png" alt="Github" class="socicon"
+    /></a>
+    <a href="#" target="_blank"
+        ><img
+          src="facebook logo_icon.png"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img
+          src="whatsapp_icon.png"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+    </div>
+</body>
+</html>

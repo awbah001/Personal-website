@@ -62,7 +62,7 @@ nav ul li a:hover:after {
   position:absolute;
   right:0px;
   border-radius: 250px;
-  box-shadow:0 4px 8px 0 rgba(247, 247, 247, 0.929), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+  box-shadow:0 4px 8px 0 rgba(247, 247, 247, 0.929), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .btn {
   color: #fff;
@@ -121,5 +121,10 @@ nav ul li a:hover:after {
   margin-top: 25px;
   margin-bottom: 30px;
 }
-
+footer{
+  background-color:transparent;
+  padding: 1.25rem;
+  text-align: center;
+  margin: 2rem 0 0;
+}
     

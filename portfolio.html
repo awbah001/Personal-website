@@ -140,9 +140,9 @@
           padding: 10rem 2rem;
         }
         .projects-section-header{
-          max-width: 1000px;
           padding:20px;
           color:#0a0a0a;
+          position: relative;
           
         }
         .projects-grid{
@@ -155,7 +155,7 @@
         .project{
           box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
           border-radius: 5px;
-          overflow: hidden;
+          
         }
         .project:hover{
           color: #ff7f50;
@@ -169,7 +169,13 @@
         .project-title {
           font-size: 15px;
           padding: 2rem 0.5rem;
-        }          
+        } 
+        footer{
+          background-color:transparent;
+          padding: 1.25rem;
+          text-align: center;
+          margin: 2rem 0 0;
+        }         
 
 </style>
 </head>
@@ -198,8 +204,8 @@
   
       <section class="content">
         <h1>Hey, I am <span>Bah</span></h1>
-        <img src="satoru_gojo.png" alt="profiles of satoru" class="profiles">
-        <h2 class="projects-section-header" style="right:200%;">Here are some of my projects</h2>
+        <img src="myprofile.jpeg" alt="profiles of satoru" class="profiles">
+        <h2 class="projects-section-header" >Here are some of my projects</h2>
         </section>
         <br><br><br><br><br><br><br><br><br>
       <section id="projects" class="projects-section">
@@ -245,11 +251,21 @@
             <p class="project-title">
               JavaScript Calculator
             </p>
+            </a>
        </div>
   
      
       </section>
       </section>
+      <footer>
+        <p class="copy">&copy; Copyright 2024</p>
+        <p class="copy">
+          Built with &#x2661; by
+          <a href="" target="_blank"
+            >Mohamed Wurrie Bah</a
+          >
+        </p>
+  </footer>
    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 </body>
 </html>
